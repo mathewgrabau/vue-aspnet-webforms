@@ -114,6 +114,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="EventHandlerPage.aspx" />
     <Content Include="FirstVuePage.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -185,6 +186,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventHandlerPage.aspx.cs">
+      <DependentUpon>EventHandlerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventHandlerPage.aspx.designer.cs">
+      <DependentUpon>EventHandlerPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="FirstVuePage.aspx.cs">
       <DependentUpon>FirstVuePage.aspx</DependentUpon>
