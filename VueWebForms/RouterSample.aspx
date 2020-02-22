@@ -55,16 +55,7 @@
 
             // Initialize the different applications
             var app = {
-                data() {
-                    return {
-                        lastClickTime: null
-                    }
-                },
-                methods: {
-                    clickHandler() {
-                        this.lastClickTime = new Date();
-                    }
-                }, template: `
+                template: `
                     <router-view />
                 `
             };
