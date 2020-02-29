@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RouterWithParameters.aspx.cs" Inherits="VueWebForms.RouterWithPramaeters" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RouterWithParameters.aspx.cs" Inherits="RouterWithServerData" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Router with Parameters Sample</h1>
     <p>Sample demonstrating using more router features.</p>
@@ -45,7 +45,7 @@
                     <div>
                         <h2>Item List</h2>
                         
-                        <router-link :to="{name: 'create'}">Add New Record</router-link>
+                        <router-link :to="{name: 'create'}" class="btn btn-link" role="button">Add New Record</router-link>
 
                         <table class="table">
                             <tr>
@@ -56,7 +56,7 @@
                             <tr v-for="item in items">
                                 <td>{{item.id}}</td>
                                 <td>{{item.title}}</td>
-                                <td><router-link :to="{name: 'edit', params: { id: item.id }}">Edit</router-link> <router-link :to="{name: 'delete', params: { id: item.id }}">Delete</router-link> </td>
+                                <td><router-link :to="{name: 'edit', params: { id: item.id }}" class="btn btn-link">Edit</router-link> <router-link :to="{name: 'delete', params: { id: item.id }}" class="btn btn-link">Delete</router-link> </td>
                             </tr>
                         </table>
                         

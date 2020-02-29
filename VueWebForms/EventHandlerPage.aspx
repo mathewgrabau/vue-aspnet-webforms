@@ -9,7 +9,6 @@
         <div class="col-md-4">
             <button class="btn btn-primary" type="button" @click.prevent="clickHandler">Update Date</button>
         </div>
-        
     </div>
 
 </asp:Content>

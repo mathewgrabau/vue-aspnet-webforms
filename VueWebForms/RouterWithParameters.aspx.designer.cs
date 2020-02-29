@@ -11,7 +11,7 @@ namespace VueWebForms
 {
 
 
-    public partial class RouterWithPramaeters
+    public partial class RouterWithServerData
     {
     }
 }
